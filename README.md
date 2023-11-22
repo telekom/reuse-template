@@ -24,6 +24,9 @@ Each file contains copyright and license information, and license texts can be f
 
 ### REUSE
 
+For a comprehensive guide on how to use REUSE for licensing in this repository, visit https://telekom.github.io/reuse-template/.   
+A brief summary follows below:
+
 The [reuse tool](https://github.com/fsfe/reuse-tool) can be used to verify and establish compliance when new files are added. 
 
 For more information on the reuse tool visit https://github.com/fsfe/reuse-tool.
