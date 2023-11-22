@@ -24,23 +24,40 @@ The REUSE standard has two ways for specifying license and copyright information
 - For text-based formats the information is placed in a comment at the top of the file. 
 - For binary formats, or formats without a comment syntax, the license information is placed in an adjacent file `<filename>.<ext>.license`
 
-The basic syntax to do this automatically is `pipx run reuse annotate -c="<COPYRIGHT-HOLDER>" -l="<LICENSE-SPDX-IDENTIFIER>" <file>`
+The basic syntax to do this automatically is:   
+`pipx run reuse annotate -c="<COPYRIGHT-HOLDER>" -l="<LICENSE-SPDX-IDENTIFIER>" <file>`
 
-:::info
-For Deutsche Telekom, use `Deutsche Telekom AG` as the copyright holder.
+:::note
+The following examples will use `Deutsche Telekom AG` as copyright holder and `APACHE-2.0` or `CC-BY-4.0` as license. Please substitute the correct values for your own use case.
 ::: 
 
 ### Set up single files
 
+To specify the licensing information for a single file you can run e.g.:
+
+`pipx run reuse annotate -c="Deutsche Telekom AG" -l="Apache-2.0" main.java`
+
 ### Set up whole directories
+
+Consider a repository with a folder `src` for the source code, `docs` for documentation and `img` for image assets in use by the code. 
+You do not have to annotate each single file, instead you can apply a license per folder.
+
+`pipx run reuse annotate -c "Deutsche Telekom AG" -l "Apache-2.0" --recursive --skip-existing ./src`
+
+`pipx run reuse annotate -c "Deutsche Telekom AG" -l "CC-BY-4.0" --recursive --skip-existing ./docs`
+
+`pipx run reuse annotate -c "Deutsche Telekom AG" -l "CC-BY-4.0" --recursive --skip-existing ./img`
+
 
 ### Handle files with unkommon or binary formats
 
-<!-- Run pipx reuse annotate ... to add Copyright and license statements to all files.
-See https://github.com/telekom/reuse-template#reuse for an example.
-To initialize single files use pipx run reuse annotate -c="Deutsche Telekom AG" -l="<LICENSE-SPDX-IDENTIFIER>" <file>.
-To initialize whole directories you can use pipx run reuse annotate -c "Deutsche Telekom AG" -l "<SPDX-LICENSE-ID>" --recursive --skip-existing ./.
-BEWARE: Use the right path, ./ is not always what you need! If your assets are under a different license than your code, you need to perform one run on e.g. ./src and one on e.g. ./resources.
-BEWARE: Replace the with the appropriate real license ID (see https://spdx.org/licenses/ for options), e.g. Apache-2.0 or CC-BY-4.0
-Run pipx run reuse download --all to make sure license text is placed in the ./LICENSES/ directory.
-Run pipx run reuse lint to verify the project is REUSE compliant. -->
+In rare cases you may notice (or [Verify Compliance](./verify-compliance.md) may tell you) that some files are not licensed, despite you running annotate on the file or the directory. 
+
+That means that the REUSE tool did not recognize the format and was not able to add a license header. In that case you can simply tell it to create a `.license` file using `--force-dot-license`:
+
+`pipx run reuse annotate -c "Deutsche Telekom AG" -l "CC-BY-4.0" --recursive --skip-existing --force-dot-license ./src/myfile.weirdextension`
+
+## Providing License Texts
+
+The REUSE standard also requires to provide the texts for each license used in the repository.   
+To that end simply run `pipx run reuse download --all`, it will set up the license texts for you.
