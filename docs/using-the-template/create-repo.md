@@ -28,7 +28,7 @@ If you already have a repository you can simply merge the contents of the templa
 
 :::tip
 
-You can either do this manually by downloading the files and combining the contents of the directories, or by adding the template as a new remote to your local repo.
+You can either do this manually by downloading the files and combining the contents of the directories, or by adding the template as a new remote to your local repo and merging the template `main` as you would any other remote branch.
 
 :::
 
