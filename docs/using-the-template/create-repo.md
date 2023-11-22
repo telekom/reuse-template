@@ -2,7 +2,7 @@
 sidebar_position: 10
 ---
 
-# Create a Repository
+# Create a Repository (2 min)
 
 :::info[If you are a Deutsche Telekom Employee]
 
