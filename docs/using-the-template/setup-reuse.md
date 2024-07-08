@@ -13,7 +13,28 @@ All that remains to do is to set up the tool locally to specify license informat
 For simplicity it is recommended to run the tool with pipx, which, without any setup, runs python applications in isolated environments.
 Head over to https://pypa.github.io/pipx/installation/ for instructions.
 
+## Test the REUSE command
+
+1. Run `pipx run reuse lint`
+2. You should see output from REUSE. It may complain about non-compliance, that is ok at this point.
+
 ## Initialize REUSE
+
+:::tip
+
+This is no longer necessary (and the `init` subcommand no longer exists) as of the [reuse specification 3.2](https://reuse.software/spec-3.2/).
+
+You can skip ahead to the [next step](./setup-license.md)!
+
+:::
+
+:::tip
+
+As of spec version 3.2 `.reuse/dep5` has been replaced by `./REUSE.toml`.
+You can update your old dep5 file to a .toml using `pipx run reuse convert-dep5`
+
+:::
+
 
 1. Clone your repository locally
 2. In the cloned directory, run `pipx run reuse init`

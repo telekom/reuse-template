@@ -48,6 +48,19 @@ You do not have to annotate each single file, instead you can apply a license pe
 
 `pipx run reuse annotate -c "Deutsche Telekom AG" -l "CC-BY-4.0" --recursive --skip-existing ./img`
 
+### Set up whole directories - alternative
+
+Alternatively you can declare the license for entire directories using glob patterns.   
+The license data is specified in `./RESUSE.toml`, the file should already exist in the template.
+
+Visit https://reuse.software/spec-3.2/#reusetoml to learn about the format. The existing file contains one commented-out example entry.
+
+:::warning
+
+Generally it is recommended to use the annotate --recursive option for better readability and clarity.  
+However in some scenarios it makes sense to declare a directory via .toml file, for example if external dependencies are included in your repository. 
+
+:::
 
 ### Handle files with unkommon or binary formats
 
