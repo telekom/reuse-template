@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkreuse_template=self.webpackChunkreuse_template||[]).push([[393],{1838:e=>{e.exports=JSON.parse('{"blogBasePath":"/reuse-template/blog","blogTitle":"Blog","authorsListPath":"/reuse-template/blog/authors"}')}}]);

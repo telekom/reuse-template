@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkreuse_template=self.webpackChunkreuse_template||[]).push([[393],{2756:e=>{e.exports=JSON.parse('{"label":"docusaurus","permalink":"/reuse-template/blog/tags/docusaurus","allTagsPath":"/reuse-template/blog/tags","count":4,"unlisted":false}')}}]);

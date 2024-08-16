@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkreuse_template=self.webpackChunkreuse_template||[]).push([[361],{4537:e=>{e.exports=JSON.parse('{"permalink":"/reuse-template/blog","page":1,"postsPerPage":10,"totalPages":1,"totalCount":4,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);
