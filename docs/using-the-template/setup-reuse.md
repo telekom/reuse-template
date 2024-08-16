@@ -20,6 +20,11 @@ Head over to https://pypa.github.io/pipx/installation/ for instructions.
 
 ## Initialize REUSE
 
+If your repository was created based on https://github.com/telekom/reuse-template it will already feature a file named `REUSE.toml` in the root directory. 
+
+If the file is not yet present, copy https://github.com/telekom/reuse-template/blob/main/REUSE.toml to your repository.
+At the beginning it is fine that the file is mostly empty, the nexts steps will tell you if you need to add additional information.
+
 :::tip
 
 This is no longer necessary (and the `init` subcommand no longer exists) as of the [reuse specification 3.2](https://reuse.software/spec-3.2/).
@@ -51,4 +56,5 @@ You can update your old dep5 file to a .toml using `pipx run reuse convert-dep5`
         If you are not a Deutsche Telekom employee you should obviously use your own name and e-mail!
         :::
 
-This process will create the (standardized) file `./reuse/dep5` to store this license related metadata. 
+If the file is not yet present, copy https://github.com/telekom/reuse-template/blob/main/REUSE.toml to your repository.
+At the beginning it is fine that the file is mostly empty, the nexts steps will tell you if you need to add additional information.
