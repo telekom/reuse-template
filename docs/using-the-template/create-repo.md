@@ -24,7 +24,7 @@ Contact the OSPO to get a repository!
 
 ## Use an existing Repo
 
-If you already have a repository you can simply merge the contents of the template `main` branch int your existing repository.
+If you already have a repository you can simply merge the contents of the template `main` branch into your existing repository.
 
 :::tip
 
