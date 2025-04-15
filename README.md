@@ -6,6 +6,8 @@ SPDX-License-Identifier: CC0-1.0
 
 # my-sample-project
 
+[![REUSE Compliance Check](https://github.com/telekom/reuse-template/actions/workflows/reuse-compliance.yml/badge.svg)](https://github.com/telekom/reuse-template/actions/workflows/reuse-compliance.yml)
+
 ## About
 
 This project is ...
