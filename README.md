@@ -11,6 +11,9 @@ SPDX-License-Identifier: CC0-1.0
 my-sample-project is a ...
 <!-- TODO: Finish this sentence by describing what the project does. This here should only be one sentence -->
 
+my-sample-project is a ...
+<!-- TODO: Add here one one paragraph (5-15 sentences) that describes what this project does. -->
+
 ## Code of Conduct
 
 This project has adopted the [Contributor Covenant](https://www.contributor-covenant.org/) in version 2.1 as our code of conduct. Please see the details in our [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md). All contributors must abide by the code of conduct.
