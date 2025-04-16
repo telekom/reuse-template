@@ -8,8 +8,8 @@ SPDX-License-Identifier: CC0-1.0
 
 ## About
 
-This project is ...
-<!-- TODO -->
+my-sample-project is a ...
+<!-- TODO: Finish this sentence by describing what the project does. This here should only be one sentence -->
 
 ## Code of Conduct
 
