@@ -20,7 +20,7 @@ By participating in this project, you agree to abide by its [Code of Conduct](./
 ## Licensing
 Copyright (c) XXXX Deutsche Telekom AG
 
-Licensed under the XXXX (SPDX short identifier: xxxx), YYYY (SPDX short identifier: yyyy) (the "Licenses"); you may not use this file except in compliance with the Licenses. 
+All content in this repository is licensed under at least one of the licenses found in [./LICENSES](./LICENSES); you may not use this file, or any other file in this repository, except in compliance with the Licenses. 
 You may obtain a copy of the Licenses by reviewing the files found in the [./LICENSES](./LICENSES) folder.
 
 Unless required by applicable law or agreed to in writing, software distributed under the Licenses is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See in the [./LICENSES](./LICENSES) folder for the specific language governing permissions and limitations under the Licenses.
